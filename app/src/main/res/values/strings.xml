@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">BaltesLab3</string>
+    <string name="title_activity_explore">ExploreActivity</string>
+</resources>
