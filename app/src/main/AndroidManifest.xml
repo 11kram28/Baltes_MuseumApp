@@ -12,6 +12,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BaltesLab3">
         <activity
+            android:name=".TicketingActivity"
+            android:exported="false"
+            android:label="@string/title_activity_ticketing"
+            android:theme="@style/Theme.BaltesLab3" />
+        <activity
             android:name=".ExploreActivity"
             android:exported="false"
             android:label="@string/title_activity_explore"
