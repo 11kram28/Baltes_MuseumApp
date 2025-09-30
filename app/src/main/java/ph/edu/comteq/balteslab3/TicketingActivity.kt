@@ -132,6 +132,9 @@ fun Ticketing(modifier: Modifier = Modifier) {
                         disabledDayContentColor = Color.Gray
                     )
                 )
+                // General Admission Ticket
+
+                // Free Ticket
             }
         }
         // bottom bar for totals
