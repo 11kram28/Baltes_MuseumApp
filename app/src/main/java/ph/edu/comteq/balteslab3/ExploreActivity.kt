@@ -1,5 +1,6 @@
 package ph.edu.comteq.balteslab3
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -31,6 +32,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.SpanStyle
 import androidx.compose.ui.text.buildAnnotatedString
@@ -58,6 +60,7 @@ class ExploreActivity : ComponentActivity() {
 
 @Composable
 fun Explore(modifier: Modifier = Modifier) {
+    val context = LocalContext.current
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -97,18 +100,25 @@ fun Explore(modifier: Modifier = Modifier) {
             Row(
                 verticalAlignment = Alignment.CenterVertically
             ) {
-                Text(
-                    text = "Tickets",
-                    color = Color.White,
-                    fontFamily = optima,
-                    fontSize = 18.sp
-                )
-                Icon(
-                    painter = painterResource(id = R.drawable.chevron_right),
-                    contentDescription = "Next",
-                    tint = Color.White,
-                    modifier = Modifier.size(35.dp)
-                )
+                Button(
+                    onClick = {
+                        val intent  = Intent(context, TicketingActivity::class.java)
+                        context.startActivity(intent)
+                    }
+                ) {
+                    Text(
+                        text = "Tickets",
+                        color = Color.White,
+                        fontFamily = optima,
+                        fontSize = 18.sp
+                    )
+                    Icon(
+                        painter = painterResource(id = R.drawable.chevron_right),
+                        contentDescription = "Next",
+                        tint = Color.White,
+                        modifier = Modifier.size(35.dp)
+                    )
+                }
             }
         }
 
