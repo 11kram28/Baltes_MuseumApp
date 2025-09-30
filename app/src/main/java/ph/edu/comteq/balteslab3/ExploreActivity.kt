@@ -7,6 +7,7 @@ import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -100,25 +101,23 @@ fun Explore(modifier: Modifier = Modifier) {
             Row(
                 verticalAlignment = Alignment.CenterVertically
             ) {
-                Button(
-                    onClick = {
-                        val intent  = Intent(context, TicketingActivity::class.java)
-                        context.startActivity(intent)
-                    }
-                ) {
-                    Text(
-                        text = "Tickets",
-                        color = Color.White,
-                        fontFamily = optima,
-                        fontSize = 18.sp
-                    )
-                    Icon(
-                        painter = painterResource(id = R.drawable.chevron_right),
-                        contentDescription = "Next",
-                        tint = Color.White,
-                        modifier = Modifier.size(35.dp)
-                    )
-                }
+                Text(
+                    text = "Tickets",
+                    color = Color.White,
+                    fontFamily = optima,
+                    fontSize = 18.sp,
+                    modifier = Modifier
+                        .clickable {
+                            val intent = Intent(context, TicketingActivity::class.java)
+                            context.startActivity(intent)
+                        }
+                )
+                Icon(
+                    painter = painterResource(id = R.drawable.chevron_right),
+                    contentDescription = "Next",
+                    tint = Color.White,
+                    modifier = Modifier.size(35.dp)
+                )
             }
         }
 
