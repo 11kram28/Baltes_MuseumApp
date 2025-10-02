@@ -230,7 +230,6 @@ fun Ticketing(modifier: Modifier = Modifier) {
                 }
 
                 // Free Ticket
-
                 Text(
                     text = "Under 18s Under 26s\nresidents of the EEA Museum members,\nProfessionals",
                     color = Color.White,
