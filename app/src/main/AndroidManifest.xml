@@ -12,6 +12,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BaltesLab3">
         <activity
+            android:name=".ExhibitActivity"
+            android:exported="false"
+            android:label="@string/title_activity_exhibit"
+            android:theme="@style/Theme.BaltesLab3" />
+        <activity
+            android:name=".ArtistsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_artists"
+            android:theme="@style/Theme.BaltesLab3" />
+        <activity
             android:name=".TicketingActivity"
             android:exported="false"
             android:label="@string/title_activity_ticketing"

@@ -52,6 +52,7 @@ dependencies {
     implementation(libs.androidx.ui.text)
     implementation(libs.androidx.foundation)
     implementation(libs.ui.graphics)
+    implementation(libs.firebase.crashlytics.buildtools)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

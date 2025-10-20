@@ -221,7 +221,9 @@ fun Explore(modifier: Modifier = Modifier) {
 
             // "Visit Gallery" button
             Button(
-                onClick = { /* TODO: Handle button click */ },
+                onClick = {
+                    val intent  = Intent(context, ArtistsActivity::class.java)
+                    context.startActivity(intent) },
                 shape = RoundedCornerShape(topStart = 0.dp, topEnd = 0.dp, bottomStart = 30.dp, bottomEnd = 30.dp),
                 colors = ButtonDefaults.buttonColors(containerColor = Color(0XFFD4AF37)),
                 modifier = Modifier

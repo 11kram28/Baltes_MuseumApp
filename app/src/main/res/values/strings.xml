@@ -2,4 +2,6 @@
     <string name="app_name">BaltesLab3</string>
     <string name="title_activity_explore">ExploreActivity</string>
     <string name="title_activity_ticketing">TicketingActivity</string>
+    <string name="title_activity_artists">ArtistsActivity</string>
+    <string name="title_activity_exhibit">ExhibitActivity</string>
 </resources>
