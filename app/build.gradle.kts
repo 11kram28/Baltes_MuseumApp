@@ -41,6 +41,14 @@ android {
 
 dependencies {
 
+    // New added
+
+    // Accompanist-pager-indicators - Creates dots/tabs indicator for the pager
+    implementation("com.google.accompanist:accompanist-pager:0.28.0")
+
+    // Accompanist-pager-indicators - Creates dots/tabs indicator for the pager
+    implementation("com.google.accompanist:accompanist-pager-indicators:0.28.0")
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
@@ -53,6 +61,9 @@ dependencies {
     implementation(libs.androidx.foundation)
     implementation(libs.ui.graphics)
     implementation(libs.firebase.crashlytics.buildtools)
+    implementation(libs.androidx.compose.foundation)
+    implementation(libs.androidx.compose.animation.core)
+    implementation(libs.androidx.compose.ui)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

@@ -12,6 +12,9 @@ uiText = "1.9.0"
 foundation = "1.9.0"
 uiGraphics = "1.9.0"
 firebaseCrashlyticsBuildtools = "3.0.6"
+foundationVersion = "1.9.5"
+animationCore = "1.9.5"
+ui = "1.9.5"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -32,6 +35,9 @@ androidx-ui-text = { group = "androidx.compose.ui", name = "ui-text", version.re
 androidx-foundation = { group = "androidx.compose.foundation", name = "foundation", version.ref = "foundation" }
 ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics", version.ref = "uiGraphics" }
 firebase-crashlytics-buildtools = { group = "com.google.firebase", name = "firebase-crashlytics-buildtools", version.ref = "firebaseCrashlyticsBuildtools" }
+androidx-compose-foundation = { group = "androidx.compose.foundation", name = "foundation", version.ref = "foundationVersion" }
+androidx-compose-animation-core = { group = "androidx.compose.animation", name = "animation-core", version.ref = "animationCore" }
+androidx-compose-ui = { group = "androidx.compose.ui", name = "ui", version.ref = "ui" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
